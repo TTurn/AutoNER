@@ -19,12 +19,6 @@ mkdir -p $MODEL_ROOT
 echo ${green}=== Compilation ===${reset}
 make
 
-if [ $EMBEDDING_TXT_FILE == "embedding/bio_embedding.txt" ]; then
-    if [ ! -e $MODEL_ROOT/embedding.pk ]; then
-        echo ${green}=== Downloading pre-encoded embedding ===${reset}
-        curl http://dmserv4.cs.illinois.edu/bio_embedding.pk -o $MODEL_ROOT/embedding.pk
-    fi
-fi
 
 if [ $MUST_RE_RUN == 1 ] || [ ! -e $MODEL_ROOT/embedding.pk ]; then
     echo ${green}=== Encoding Embeddings ===${reset}
