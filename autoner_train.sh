@@ -3,6 +3,7 @@ RAW_TEXT="data/BC5CDR/raw_text.txt"
 DICT_CORE="data/BC5CDR/dict_core.txt"
 DICT_FULL="data/BC5CDR/dict_full.txt"
 EMBEDDING_TXT_FILE="embedding/bio_embedding.txt"
+EMBEDDING_TXT_FILE="embedding/glove.6B.100d.txt"
 MUST_RE_RUN=0
 
 green=`tput setaf 2`
